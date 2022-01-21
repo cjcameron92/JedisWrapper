@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+    id 'maven-publish'
+}
+
+group 'cc.redis.api'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.jetbrains:annotations:22.0.0'
+    implementation 'redis.clients:jedis:4.0.1'
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'cc.redis.api'
+            artifactId = 'wrapper'
+            version = '2.0'
+            from components.java
+        }
+    }
+}
