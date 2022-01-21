@@ -1,9 +1,9 @@
-#Jedis Wrapper
+# Jedis Wrapper
 
-###What is Jedis?
+## What is Jedis?
 Jedis is a Redis client for java, more information can be found [here](https://github.com/redis/jedis).
 
-###Getting Started
+## Getting Started
 To get started with this Jedis Wrapper add it as a dependency.
 
 Maven
