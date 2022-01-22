@@ -50,5 +50,5 @@ Subscribing
 ```java
 redis.subscribe(str -> {     
     System.out.println(str);
-    }, "EXAMPLE_CHANNEL", "ANOTHER_CHANNEL");
+}, "EXAMPLE_CHANNEL", "ANOTHER_CHANNEL");
 ```
